@@ -1,0 +1,4 @@
+Constrained Instances: 'SB-06-1', 'Engine-1'
+Constraint Name: Совпадение19
+Error Details: Constraint is not supported. The constraint has been exported as unknown constraint.
+---------------------------------------------------------------------------------

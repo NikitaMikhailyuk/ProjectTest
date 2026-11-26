@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="11/26/26||21:26:49" using="Simscape Multibody Link Version 7.4" from="SolidWorks 28.5.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="MB-A0" uid="MB-A0" version="424">
+<AssemblyFile name="MB-A0.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="SB-06-1" uid="SB-06-1" entityUid="SB-06*:*Default">
+<Transform>
+<Rotation>-1 -1.8017428600021976e-16 0 -1.4948746375889377e-16 0.93969262078590843 -0.34202014332566943 1.1608093903458249e-16 -0.34202014332566943 -0.93969262078590843</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Engine-1" uid="Engine-1" entityUid="Engine*:*Matlab">
+<Transform>
+<Rotation>1 -1.2825247395143678e-16 0 1.1197591193900758e-16 0.93969262078590832 0.34202014332566943 0 -0.34202014332566943 0.93969262078590832</Rotation>
+<Translation>0 0.72987098585697874 2.0053040527571286</Translation>
+</Transform>
+</Instance>
+<Instance name="MB-P02-1" uid="MB-P02-1" entityUid="MB-P02*:*Default">
+<Transform>
+<Rotation>0.33265952887007505 0.9430469966295103 0 -0.8861743037870643 0.31259770451332636 0.3420201433256691 0.3225410689500669 -0.11377625974279251 0.93969262078590832</Rotation>
+<Translation>-6.106226635438361e-16 0.9200341855460501 2.5277731499140947</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="1" g="0.33333333333333331" b="0" a="1"/>
+<Diffuse r="1" g="0.33333333333333331" b="0" a="1"/>
+<Specular r="0.050000000000000003" g="0.016666666666666666" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="MB-P01-1" uid="MB-P01-1" entityUid="MB-P01*:*Default">
+<Transform>
+<Rotation>1 -1.5649025755003043e-16 0 1.7868784329108608e-16 0.93969262078590821 0.34202014332566927 -1.0875718553095161e-16 -0.34202014332566916 0.93969262078590821</Rotation>
+<Translation>0 0.92003418554605043 2.527773149914093</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.78431372549019607" g="0.78431372549019607" b="0.78431372549019607" a="1"/>
+<Diffuse r="0.78431372549019607" g="0.78431372549019607" b="0.78431372549019607" a="1"/>
+<Specular r="0.39215686274509803" g="0.39215686274509803" b="0.39215686274509803" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Концентричный1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Engine-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>MB-P01-1</Uid>
+</InstancePath>
+<Position>0 0 -0.20599999999999996</Position>
+<Axis>0 -1.6653345369377348e-16 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Совпадение1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Engine-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>MB-P01-1</Uid>
+</InstancePath>
+<Position>0 -1.1102230246251565e-16 -0.55599999999999961</Position>
+<Axis>0 -1.6653345369377348e-16 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Совпадение5">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Engine-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>MB-P01-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Концентричный3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>MB-P01-1</Uid>
+</InstancePath>
+<Position>0 0 0.046999999999999709</Position>
+<Axis>0 1.6653345369377348e-16 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>MB-P02-1</Uid>
+</InstancePath>
+<Position>2.2204460492503131e-16 1.1102230246251565e-16 0.13900000000000023</Position>
+<Axis>0 1.3877787807814457e-16 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Совпадение6">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>MB-P01-1</Uid>
+</InstancePath>
+<Position>0 0 0.051999999999999158</Position>
+<Axis>0 1.6653345369377348e-16 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>MB-P02-1</Uid>
+</InstancePath>
+<Position>-0.025507048670067145 0.037072772598536807 0.052000000000000046</Position>
+<Axis>0 -1.3877787807814457e-16 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Совпадение8">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>MB-A0</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>MB-A0</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Совпадение10">
+<ConstraintGeometry geomType="point">
+<InstancePath>
+<Uid>MB-A0</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="point">
+<InstancePath>
+<Uid>MB-A0</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Совпадение11">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>SB-06-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>MB-A0</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Совпадение12">
+<ConstraintGeometry geomType="point">
+<InstancePath>
+<Uid>SB-06-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="point">
+<InstancePath>
+<Uid>MB-A0</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+</ConstraintGeometry>
+</Coincident>
+<Angle name="Угол1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>SB-06-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>MB-A0</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Angle>
+<UnknownConstraint name="Совпадение19">
+<ConstraintGeometry geomType="point">
+<InstancePath>
+<Uid>SB-06-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="point">
+<InstancePath>
+<Uid>Engine-1</Uid>
+</InstancePath>
+<Position>0 0 -2.1340000000000008</Position>
+</ConstraintGeometry>
+</UnknownConstraint>
+</Constraints>
+<Frames>
+</Frames>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Engine" uid="Engine*:*Matlab" version="1152">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Engine.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>35.831861858102847</Mass>
+<CenterOfMass>-5.8917677369371848e-09 9.1688663582965815e-06 -1.2780092418549913</CenterOfMass>
+<Inertia>18.257685859901187 18.257664535702318 0.10493599768707637 0.0002109851057162001 7.0008936618278936e-08 -3.2133165400261049e-08</Inertia>
+</MassProperties>
+<GeometryFile name="Engine_Matlab_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
+<Diffuse r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
+<Specular r="0.75627450980392152" g="0.78235294117647047" b="0.89039215686274509" a="1"/>
+<Emissive r="0.063686274509803922" g="0.065882352941176475" b="0.074980392156862752" a="1"/>
+<Shininess>0.55000000000000004</Shininess>
+</VisualProperties>
+<Frames>
+<Frame name="SMLINK_SK1" uid="SMLINK_SK1">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 -2.1339999999999999</Translation>
+</Transform>
+</Frame>
+</Frames>
+</Part>
+<Part name="MB-P01" uid="MB-P01*:*Default" version="203">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="MB-P01.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>14.4566447202267</Mass>
+<CenterOfMass>4.8235760496086854e-07 9.9164426861432804e-07 -0.20067689827915838</CenterOfMass>
+<Inertia>0.51333404578815944 0.51333553976798751 0.028835838721079823 -2.1410053071866414e-06 -2.4549540675438118e-06 -2.8994194112980098e-07</Inertia>
+</MassProperties>
+<GeometryFile name="MB-P01_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
+<Diffuse r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
+<Specular r="0.75627450980392152" g="0.78235294117647047" b="0.89039215686274509" a="1"/>
+<Emissive r="0.063686274509803922" g="0.065882352941176475" b="0.074980392156862752" a="1"/>
+<Shininess>0.55000000000000004</Shininess>
+</VisualProperties>
+<Frames>
+</Frames>
+</Part>
+<Part name="MB-P02" uid="MB-P02*:*Default" version="211">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="MB-P02.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>1.9626562874173406</Mass>
+<CenterOfMass>0.00018415792433896947 -0.00028686502953802347 0.14806327785082299</CenterOfMass>
+<Inertia>0.0074822090715915036 0.0074427537671194702 0.0030181198813550108 -8.9117087765585304e-06 6.3959391526474624e-06 4.970785170703841e-05</Inertia>
+</MassProperties>
+<GeometryFile name="MB-P02_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
+<Diffuse r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
+<Specular r="0.75627450980392152" g="0.78235294117647047" b="0.89039215686274509" a="1"/>
+<Emissive r="0.063686274509803922" g="0.065882352941176475" b="0.074980392156862752" a="1"/>
+<Shininess>0.55000000000000004</Shininess>
+</VisualProperties>
+<Frames>
+</Frames>
+</Part>
+<Part name="SB-06" uid="SB-06*:*Default" version="194">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="SB-06.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>23.862198714391241</Mass>
+<CenterOfMass>0.0032250623491839095 0.0019777217748223413 -1.4158084803938773</CenterOfMass>
+<Inertia>19.644130487819087 19.646806858074516 0.10117402394960406 -0.097328525942540975 -0.029648136771971853 -0.0008801567806530112</Inertia>
+</MassProperties>
+<GeometryFile name="SB-06_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
+<Diffuse r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
+<Specular r="0.75627450980392152" g="0.78235294117647047" b="0.89039215686274509" a="1"/>
+<Emissive r="0.063686274509803922" g="0.065882352941176475" b="0.074980392156862752" a="1"/>
+<Shininess>0.55000000000000004</Shininess>
+</VisualProperties>
+<Frames>
+<Frame name="SMLINK_SK2" uid="SMLINK_SK2">
+<Transform>
+<Rotation>-1 0 0 0 1 0 0 0 -1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Frame>
+</Frames>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
